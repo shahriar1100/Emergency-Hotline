@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+
+@theme {
+  --font-hindMadurai: "Oswald", sans-serif; 
+}

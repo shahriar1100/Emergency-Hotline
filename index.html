@@ -98,8 +98,8 @@
     <!-- hero section -->
     <!-- main info section -->
     <section id="info" class="px-[60px] py-12 bg-[#F5FFF6]">
-      <div class="flex">
-        <div class="callNumberPart grid grid-cols-3 gap-10">
+      <div class="flex justify-between">
+        <div class="callNumberPart md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 flex flex-col gap-5">
           <!-- card -->
           <div class="bg-white w-[436px] shadow-sm p-9 rounded-2xl">
             <!-- top part -->
@@ -378,7 +378,25 @@
             </div>
           </div>
         </div>
-        <div class="callHistory"></div>
+        <div class="callHistory bg-white p-6 rounded-2xl  w-[400px]">
+          <div class="flex justify-between items-center pb-8 ">
+            <h2 class="text-2xl font-medium text-black"><i class="fa-regular fa-clock"></i> Call History</h2>
+            <button
+              class="px-4 sm:px-6 md:px-9 py-2 sm:py-3 md:py-[14px] bg-[#00A63E] rounded-full text-sm sm:text-base text-white"
+            >
+              Clear
+            </button>
+          </div>
+          <div class="titleOfHistory text-[18px] flex justify-between items-center bg-[#FAFAFA] p-4 rounded-2xl mb-2">
+            <div>
+              <h3 class="font-semibold text-black pb-1">Fire Service Number</h3>
+              <p class="text-gray-600">999</p>
+            </div>
+            <div>
+              <p class="text-black">11:36:58 AM</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- main info section -->

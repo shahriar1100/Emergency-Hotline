@@ -61,3 +61,19 @@ document.getElementById("callHistoryDelete").addEventListener("click", function(
     callHistory.innerHTML = ""
     
 })
+
+// when click copy button particular services title copy
+document.querySelectorAll(".btn-soft").forEach(copyButton =>{
+    copyButton.addEventListener("click",function(){
+        const card = this.closest(".card")
+        const number = card.querySelector(".card-number").innerText;
+        navigator.clipboard.writeText(number)
+        alert("Copied: " + number)
+        
+        const copyCountNumber = parseInt(document.getElementById("copyCountNumber").innerText)
+        const copyCountNumberIncr = copyCountNumber + 1
+        document.getElementById("copyCountNumber").innerText = copyCountNumberIncr
+    })
+    
+})
+// copyCountNumber

@@ -20,7 +20,24 @@ document.querySelectorAll(".call-btn").forEach(button => {
         const title = card.querySelector(".card-title").innerText
         const number = card.querySelector(".card-number").innerText
         alert(`${title} Call: ${number}`)
-
+        // add call history
+        const callHistory = document.getElementById("callHistory")
+        const div = document.createElement("div")
+        const date = new Date().toLocaleTimeString()
+        div.innerHTML = `       
+      <div class="flex justify-between items-center mb-3 bg-[#FAFAFA] p-4 rounded-xl">
+              <div>
+              <h3 class="font-semibold text-sm sm:text-base">
+                ${title}
+              </h3>
+              <p class="text-gray-600 text-sm">${number}</p>
+            </div>
+            <div>
+              <p class="text-sm">11:36:58 AM</p>
+            </div>
+            </div>
+        `
+        callHistory.appendChild(div)
 
     })
 
@@ -37,3 +54,5 @@ document.querySelectorAll(".fa-heart").forEach(heartIcon => {
     })
 
 })
+
+// call history delete

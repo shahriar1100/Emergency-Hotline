@@ -56,3 +56,8 @@ document.querySelectorAll(".fa-heart").forEach(heartIcon => {
 })
 
 // call history delete
+document.getElementById("callHistoryDelete").addEventListener("click", function(){
+    const callHistory = document.getElementById("callHistory")
+    callHistory.innerHTML = ""
+    
+})
